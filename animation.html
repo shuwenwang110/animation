@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation</title>
+    <style>
+        /* 页面整体黑色背景，无滚动条 */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden; /* 不显示滚动条 */
+            background-color: #000; /* 黑色背景 */
+            display: flex;
+            justify-content: center; /* 水平居中 */
+            align-items: center;     /* 垂直居中 */
+        }
+
+        /* 动图自适应缩放，高度填满页面，宽度自动 */
+        img {
+            height: 100vh; /* 视口高度 */
+            width: auto;   /* 保持比例 */
+            max-width: 100%; /* 防止超出宽度 */
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <img src="animation.gif" alt="Pencil Animation">
+</body>
+</html>
